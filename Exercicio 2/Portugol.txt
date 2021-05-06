@@ -1,0 +1,26 @@
+programa {
+	check : logico verdadeiro
+	texto : caractere vazio
+	nome : caractere vazio
+	senha : caractere vazio
+
+	funcao inicio() {
+		enquanto (check = verdadeiro)
+	{
+		escreval("Insira seu nome" + texto)
+		leia(nome)
+
+		escreval("Insira sua senha" + texto)
+		leia(senha)
+
+		se (nome = senha)
+		{
+			escreval("Cadastro inválido: Nome igual a senha")
+			texto <- " novamente"
+		}
+		senao{
+			escreval("Cadastro Efetuado")
+			check <- falso
+		}
+	}
+}

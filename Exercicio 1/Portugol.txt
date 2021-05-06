@@ -1,0 +1,26 @@
+programa {
+	nota : real
+        check : lógico verdadeiro
+        texto : caractere vazio
+
+
+	funcao inicio() {
+		enquanto ( check == verdadeiro )
+		{
+			escreva("Insira sua nota" + texto)
+			leia(nota)
+			
+			se (nota >= 0 e nota <= 10) entao
+			{
+				escreval("Nota Válida")				
+				check <- verdadeiro
+			}
+			senao
+			{
+				escreval("Nota inválida")
+				texto <- " novamente"
+			}
+		}
+	}
+	}
+}
